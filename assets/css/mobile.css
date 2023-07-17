@@ -1,10 +1,11 @@
-@media (max-width: 376px) {
+@media (max-width: 768px) {
     .container {
         padding: 0 16px;
     }
 
     h2 {
         font-size: 24px;
+        margin-bottom: 24px;
     }
 
     .header {
@@ -22,15 +23,58 @@
         flex-direction: column-reverse;
     }
 
+    .header_description {
+        font-size: 16px;
+    }
+
     .properties_list {
         top: 0;
         padding-bottom: 33px;
     }
 
     .properties_item {
+        position: relative;
         flex-direction: column-reverse;
         justify-content: start;
         width: calc(50% - 15px);
+        padding-top: 40px;
+        font-size: 14px;
     }
 
+    .properties_item i {
+        position: absolute;
+        top: -10px;
+    }
+
+    .products {
+        margin-bottom: 40px;
+    }
+
+    .products_item {
+        width: 100%;
+    }
+
+    .products_item h3 {
+        font-size: 16px;
+        line-height: var(--line-height);
+    }
+
+
+    .advantages {
+        flex-direction: column;
+    }
+
+    .advantages_header {
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .advantages div {
+        width: 100%;
+    }
+
+    .advantages_item {
+        border-radius: 20px;
+        box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.05);
+    }
 }
